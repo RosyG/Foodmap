@@ -1,4 +1,23 @@
-img {
+/*img {
   width: 300px;
   height: 70vh;
+}*/
+#vista {
+  background-color: black;
+}
+ h1 {
+  color: #AA692F;
+ }
+.splashscreen {
+  height: 100vh;
+
+}
+
+#principal {
+  position: absolute;
+  height: 100vh;
+}
+
+hr::after, hr::before {
+  content: "**";
 }
