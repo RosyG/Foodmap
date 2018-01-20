@@ -1,23 +1,17 @@
-/*img {
-  width: 300px;
-  height: 70vh;
-}*/
-#vista {
-  background-color: black;
+.row > div > img {
+  height: 50%;
 }
- h1 {
+.map {
+  width: 30vh;
+  height: 20vh;
+}
+  h1 {
   color: #AA692F;
  }
-.splashscreen {
-  height: 100vh;
+  #splashscreen, #principal {
+    height: 100vh;
+  }
 
-}
-
-#principal {
-  position: absolute;
-  height: 100vh;
-}
-
-hr::after, hr::before {
-  content: "**";
-}
+  #filtered {
+    width: 50%;
+   }
