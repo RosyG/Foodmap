@@ -3,67 +3,67 @@ var data = [
   {'name': 'The Capital Grille',
    'adress':'Paseo de la Reforma 250, Juárez. Dentro del Edificio Capital Reforma, esq. con Niza.',
    'food': 'China',
-   'motto': 'Tenemos los mejores Delicias de oriente al mejor precio.',
+   'motto': 'La mejor comida estadounidense y opciones sin gluten.',
    'photo': 'http://www.rand-img.com/720/480/food',
-   'prince': '$50-$170',
-   'services': 'Por el momento no contamos con servicio a domicio'
+   'prince': '$893 - $1,005',
+   'services': 'Comida para llevar y  Wi-Fi gratis.'
  },
   {'name': 'Buena Barra',
-   'adress':'Paseo2 de la Reforma 250, Juárez. Dentro del Edificio Capital Reforma, esq. con Niza.',
+   'adress':'Calle Aristoteles 124 Piso 3, CDMX 11550.',
    'food': 'Italiana',
    'motto': 'Tenemos los mejores Delicias de oriente al mejor precio.',
    'photo': 'http://www.rand-img.com/720/480/food',
-   'prince': '$50-$170',
-   'services': 'Por el momento no contamos con servicio a domicio'
+   'prince': '$750-$1,000',
+   'services': 'Contamos con reservaciones y servicio a domicilio.'
  },
   {
     'name': 'The Palm Santa Fe',
-     'adress':'Paseo3 de la Reforma 250, Juárez. Dentro del Edificio Capital Reforma, esq. con Niza.',
+     'adress':'Campos Eliseos #218, Polanco, Ciudad de México, México.',
      'food': 'Argentina',
-     'motto': 'Tenemos los mejores Delicias de oriente al mejor precio.',
+     'motto': 'The Classic American Steak House sirve los mejores cortes americanos.',
      'photo': 'http://www.rand-img.com/720/480/food',
-     'prince': '$50-$170',
-     'services': 'Por el momento no contamos con servicio a domicio'
+     'prince': 'Desde $600',
+     'services': '*En días de concierto en Auditorio, abierto hasta las 01:00 hrs.'
 
   },
   {
     'name': 'Bellini',
-     'adress':'Paseo4 de la Reforma 250, Juárez. Dentro del Edificio Capital Reforma, esq. con Niza.',
+     'adress':'Montecito 38 Piso 45, Torre WTC Cd. de México, Col. Nápoles.',
      'food': 'Italiana',
-     'motto': 'Tenemos los mejores Delicias de oriente al mejor precio.',
+     'motto': 'El más grande y exclusivo de México.',
      'photo': 'http://www.rand-img.com/720/480/food',
-     'prince': '$50-$170',
+     'prince': 'Desde $299.',
      'services': 'Por el momento no contamos con servicio a domicio'
 
   },
   {
     'name': 'Restaurante Shu',
-     'adress':'Paseo5 de la Reforma 250, Juárez. Dentro del Edificio Capital Reforma, esq. con Niza.',
+     'adress':'Calle Tres #55, Colonia La Fe, CDMX.',
      'food': 'Japonesa',
-     'motto': 'Tenemos los mejores Delicias de oriente al mejor precio.',
+     'motto': 'El platillo principal es el Teppanyaki.',
      'photo': 'http://www.rand-img.com/720/480/food',
-     'prince': '$50-$170',
-     'services': 'Por el momento no contamos con servicio a domicio'
+     'prince': '$502 - $800',
+     'services': 'Entrega a domicilio, Comida para llevar y sillitas altas disponibles'
 
   },
   {
     'name': 'Miralto',
-     'adress':'Paseo6 de la Reforma 250',
+     'adress':'Eje Central #2, Piso 41, Torre Latinoamericana, Cuauhtémoc, CDMX',
      'food': 'Portuguesa',
-     'motto': 'Tenemos los mejores Delicias de oriente al mejor precio.',
+     'motto': 'Inaugurada desde el 30 de abril de 1956 .',
      'photo': 'http://www.rand-img.com/720/480/food',
-     'prince': '$50-$170',
-     'services': 'Por el momento no contamos con servicio a domicio'
+     'prince': '$223 - $651',
+     'services': 'Es bueno para: Vistas, Reuniones de negocios, Romántico.'
 
   },
   {
     'name': 'Mexicanito',
-     'adress':'Paseo7 de la Reforma 250, Juárez. Dentro del Edificio Capital Reforma, esq. con Niza.',
+     'adress':'Calle Río Lerma 154 Cuauhtémoc 06500 Ciudad de México, CDMX.',
      'food': 'Mexicana',
-     'motto': 'Tenemos los mejores Delicias de oriente al mejor precio.',
+     'motto': 'Contamos con 39 cervecerías mexicanas y 160 etiquetas diferentes.',
      'photo': 'http://www.rand-img.com/720/480/food',
-     'prince': '$50-$170',
-     'services': 'Por el momento no contamos con servicio a domicio'
+     'prince': '$300 - $450',
+     'services': 'Servicio a domicilio y accesos para discapacitados.'
 
   }
 ]

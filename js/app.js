@@ -18,23 +18,25 @@
   /*Ejecutando el modal al dar click en las imagenes, para mostrar más información sobre los restaurantes*/
   $("#modal1").modal()
 
-  ///////////////////////////
   /*Ejecutando la función para acceder a la data, que contiene la información del restaurante correspondiente a la imagen.*/
   $("#Japonesa").click(accessData);
-
+  $("#China").click(accessData);
+  $("#Portuguesa").click(accessData);
+  $("#Argentina").click(accessData);
 
 /*Función que añade la información de la data, tiene como parametros:
 Nombre del restaurante, foto, leyenda, dirección, rango de precios y si tiene o no servicio a domicilio.*/
-function accessData () {
-  var $index = $("#Japonesa").data("index");/*Indice que corresponde al objeto dentro del arreglo.*/
+function accessData (event) {
+  var target = $(event.target);/*Me arroja el elemento que detona al evento.*/
+  var $index = target.data("index");/*Indice que corresponde al la información de la imagen, esa inf está dentro de la data.*/
 ////////////////////////////
   /*Valores de la data en cada rubro.*/
   var food = data[$index].food;
   var name = data[$index].name;
-  var motto = data[$index].motto;//*++++++++++++++
+  var motto = data[$index].motto;
   var adress = data[$index].adress;
-  var src = data[$index].photo;//+++++++++
-  var princeRange = data[$index].prince;//+++++++++++
+  var src = data[$index].photo;
+  var princeRange = data[$index].prince;
   var homeService =  data[$index].services;
 
   console.log(src);
