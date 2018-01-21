@@ -1,5 +1,5 @@
 .row > div > img {
-  height: 50%;
+  width: 30%;
 }
 .map {
   width: 30vh;
@@ -17,6 +17,6 @@
    }
 
   /*Estilos del modal de la información de los de los restaurantes*/
- .row > div > img {
-    width: 30%;
-  }
+ #img-restaurant {
+   width: 40%;
+ }

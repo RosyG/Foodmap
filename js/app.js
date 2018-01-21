@@ -1,77 +1,71 @@
+
+  /*Función que manda a llamar al contenedo que será ocultado en el tiempo de la variable time, indicado en el body, al cargarse la página.*/
   function splash(time) {
+  /*Función de splashscreen que recibe al tiempo en ms*/
   setTimeout(function () {
-   $('#splashscreen').hide();
+    $('#splashscreen').hide();
   }, time);
   }
 
-  $("#modal1").modal();
+  /*Mandando a llamar a todos los elementos de HTML por DOM.*/
+  var $nameRestaurant = $("#name-restaurant");
+  var $imagen = $("#img-restaurant");
+  var $motto = $("#motto");
+  var $adress = $("#adress");
+  var $princeRange = $("#price-range");
+  var $homeService =$("#home-service");
+
+  /*Ejecutando el modal al dar click en las imagenes, para mostrar más información sobre los restaurantes*/
+  $("#modal1").modal()
+
+  ///////////////////////////
+  /*Ejecutando la función para acceder a la data, que contiene la información del restaurante correspondiente a la imagen.*/
+  $("#Japonesa").click(accessData);
 
 
-/*
-$("#food-1").mouseover (function () {
-  $("#text-1").fadeIn(500);
-}).mouseout (function () {
-  $("#text-1").fadeOut(500);
+/*Función que añade la información de la data, tiene como parametros:
+Nombre del restaurante, foto, leyenda, dirección, rango de precios y si tiene o no servicio a domicilio.*/
+function accessData () {
+  var $index = $("#Japonesa").data("index");/*Indice que corresponde al objeto dentro del arreglo.*/
+////////////////////////////
+  /*Valores de la data en cada rubro.*/
+  var food = data[$index].food;
+  var name = data[$index].name;
+  var motto = data[$index].motto;//*++++++++++++++
+  var adress = data[$index].adress;
+  var src = data[$index].photo;//+++++++++
+  var princeRange = data[$index].prince;//+++++++++++
+  var homeService =  data[$index].services;
 
-});
+  console.log(src);
+  console.log(food);
+  console.log(adress);
+  console.log(name);
 
-//Otra manera de escribir el código anterior.
-$("#food-1").mouseover (show).mouseout (hidden);
+  /*Ejecutando la función que dibuja los valores en HTML.*/
+  paintInformationInHtml (name,motto,adress,src,princeRange,homeService);
 
-function show () {
-  $("#text-1").fadeIn(500);
-}
-function hidden () {
-  $("#text-1").fadeOut(500);
-}
+  $("#close").click(cleanVar);/*Al cerrar el modarl se ejecuta la función cleanVar() para poder borrar todos los campos.*/
 
+}//Fin de función accessData().
+  /*Declaraión de la función que pinta los valores de la información del restaurante en HTML.*/
+  function paintInformationInHtml (name,motto,adress,src,princeRange,homeService) {
+    /*Agregando a lo que se accedio por medio de DOM.*/
+    $nameRestaurant.append(name);
+    $imagen.attr("src",src);
+    $motto.append(motto)
+    $adress.append(adress);
+    $princeRange.append(princeRange);
+    $homeService.append(homeService);
 
-$("#food-3").mouseover (function (){
-  $("#food-3").fadeToggle(5000);
-
-  $("#food-4").fadeIn(5000);
-  $("#food-4").fadeToggle(5000);
-  $("#food-4").remove();
-  $("#food-5").fadeIn(5000);
-}).
-$("#food-5").mouseout (function () {
-  /*$("#food-5").fadeOut(5000);*/
-/*
-  $("#food-4").fadeIn(5000);
-
-});
-
-  /*$("#food-1").mouseover (function () {
-    $("#text-1").fadeIn(500);
-  }).mouseout (function () {
-    $("#text-1").fadeOut(500);
-
-  });
-
-//Otra manera de escribir el código anterior.
-  $("#food-1").mouseover (show).mouseout (hidden);
-
-  function show () {
-    $("#text-1").fadeIn(500);
   }
-  function hidden () {
-    $("#text-1").fadeOut(500);
+  /*Declaración de la función que limpia los campos.*/
+  function cleanVar() {
+    $nameRestaurant.empty();
+    $imagen.empty();
+    $motto.empty();
+    $adress.empty();
+    $princeRange.empty();
+    $homeService.empty();
+
   }
-
-
-  $("#food-3").mouseover (function (){
-    $("#food-3").fadeToggle(5000);
-
-    $("#food-4").fadeIn(5000);
-    $("#food-4").fadeToggle(5000);
-    $("#food-4").remove();
-    $("#food-5").fadeIn(5000);
-  }).
-  $("#food-5").mouseout (function () {
-    /*$("#food-5").fadeOut(5000);*/
-  /*
-    $("#food-4").fadeIn(5000);
-
-  });
-*/
-console.log(data[0].food);
