@@ -15,3 +15,8 @@
   #filtered {
     width: 50%;
    }
+
+  /*Estilos del modal de la información de los de los restaurantes*/
+ .row > div > img {
+    width: 30%;
+  }

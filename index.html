@@ -31,11 +31,11 @@
 
           <div class="row">
             <div class="col m3">
-              <img data-target="modal1 src="assets/food-1.jpg" alt="restaurant-1">
+              <img id="Japonesa" class="modal-trigger" href="#modal1" src="assets/food-1.jpg" alt="restaurant-1">
             </div>
 
             <div class="col m3">
-              <img id="china" src="assets/food-2.jpg" alt="restaurant-3">
+              <img id="China" src="assets/food-2.jpg" alt="restaurant-3">
             </div>
 
             <div class="col m3">
@@ -52,15 +52,37 @@
         </section>
 
         <!-- Modal Structure -->
-       <div id="modal1" class="modal bottom-sheet">
-         <div class="modal-content">
-           <h4>Modal Header</h4>
-           <p>A bunch of text</p>
-         </div>
-         <div class="modal-footer">
-           <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-         </div>
-       </div>
+
+        <div id="modal1" class="modal">
+          <div class="modal-content col s6 m6">
+              <div class="row">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right">x</a>
+              </div>
+              <div class="row">
+                <div class="col s12 m12">
+                  <span id="name-restaurant">Restaurante Shu</span>
+                </div>
+                <div class="col s12 m12 center">
+                  <img id="img-adress" src="assets/food-5.jpg">
+                </div>
+                <div class="row">
+                  <p id="motto">su leyenda</p>
+                  <a class="btn waves-effect waves-light orange">pedir ahora</a>
+                </div>
+                <div class="row">
+                  <div class="col s6 m6">
+                    <p id="adress">su address</p>
+                  </div>
+
+                  <div class="col s6 m6">
+                    <p id="price-range">su rango de precio</p>
+                    <p style="display:block">servicio a domicilio</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
 
 
 
