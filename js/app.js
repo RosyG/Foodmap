@@ -15,6 +15,9 @@
   var $princeRange = $("#price-range");
   var $homeService =$("#home-service");
 
+  /*Mandando a ejecutar la función que filtrara por medio de food, cuando se da un click en filtrar restaurantes.*/
+  $("#filtered").keyup(filterFood);
+
   /*Ejecutando el modal al dar click en las imagenes, para mostrar más información sobre los restaurantes*/
   $("#modal1").modal()
 
@@ -70,4 +73,35 @@ function accessData (event) {
     $princeRange.empty();
     $homeService.empty();
 
+  }
+
+  /*Declaración de la función que filtrara los restaurantes  */
+  function filterFood (){
+  var searchFood = $("#filtered").val().toLowerCase(); /*El value del filtro se convierte en minúsculas para poder hacer que la comparació coincida. */
+    if($("#filtered").val().trim().length > 0) {
+        //Si en el filtro no es vacío se ejecuta de AQUÍ
+        var filteredFood = data.filter(function(index) {
+
+            return index.food.toLowerCase().indexOf(searchFood) >= 0;
+            /*Index of busca al item especificado entre parentesis y devuelve la posición localizada.*/
+
+        });
+      $("#publish-restaurant").empty();
+      filteredFood.forEach(function(index){
+        paintfoodInHtml(index);
+        console.log(index.food);
+      });
+      //Hasta AQUÍ
+    } else {
+      $("#publish-restaurant").empty();
+      data.forEach(function(index){
+        paintfoodInHtml(index);
+        console.log(index.food);
+      });
+    }
+  }
+  /*Función que pinta las imágenes en HTML*/
+  function paintfoodInHtml (index){
+     $(".newImg").attr("src", index.photo);
+     console.log(index.photo);
   }
