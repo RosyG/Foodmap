@@ -102,6 +102,12 @@ function accessData (event) {
   }
   /*Función que pinta las imágenes en HTML*/
   function paintfoodInHtml (index){
-     $(".newImg").attr("src", index.photo);
-     console.log(index.photo);
+  /*   $(".newImg").attr("src", index.photo);
+     console.log(index.photo);*/
+     var $optionRestaurant = $("<p/>");
+     //Añadiendo el texto a la nueva variable creada.
+     $optionRestaurant.text(index.name);
+     //Agregando al contenedor del HTML.
+     $("#publish-restaurant").prepend($optionRestaurant);
+
   }
