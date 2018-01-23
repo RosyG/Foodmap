@@ -3,7 +3,8 @@
   function splash(time) {
   /*Función de splashscreen que recibe al tiempo en ms*/
   setTimeout(function () {
-    $('#splashscreen').hide();
+    $("#splashscreen").hide("slow");
+    $("#principal").show();
   }, time);
   }
 
@@ -92,7 +93,9 @@ function accessData (event) {
         console.log(index.food);
       });
       //Hasta AQUÍ
-    } else {
+    } else if ($("#filtered").val().trim().length == 0) {
+        $("#publish-restaurant").empty();/*Si en el input es vacío, se borra la lista.*/
+    }else {
       $("#publish-restaurant").empty();
       data.forEach(function(index){
         paintfoodInHtml(index);
@@ -102,8 +105,6 @@ function accessData (event) {
   }
   /*Función que pinta las imágenes en HTML*/
   function paintfoodInHtml (index){
-  /*   $(".newImg").attr("src", index.photo);
-     console.log(index.photo);*/
      var $optionRestaurant = $("<p/>");
      //Añadiendo el texto a la nueva variable creada.
      $optionRestaurant.text(index.name);

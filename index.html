@@ -6,52 +6,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/gif" href="assets/icon-food.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
-  <body onload="splash(1000)">
+  <body onload="splash(2500)">
 
         <section id="splashscreen" class="col m12 splashscreen">
-          <h1 class="center">Foodmap</h1>
+          <h1 class="letter-food">Foodmap</h1>
         </section>
 
         <section id="principal" class="col m12">
-          <h1 class="center" >Foodmap</h1>
-          <div class="row">
+          <h1 class="center letter-principal" >Foodmap</h1>
+          <div class="row line center">
             <div class="col m1"><i class="material-icons right">check_box_outline_blank</i></div>
-            <div class="col m10"><hr></div>
+            <div class="col m10">___________________________________________</div>
             <div class="col m1"><i class="material-icons">check_box_outline_blank</i></div>
           </div>
 
           <div class="col m12 center">
-            <img class="map" src="assets/map.png" alt="map">
+              <iframe class="map center" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3762.8172156833334!2d-99.16530805093316!3d19.420301986826956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1516686562358" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
-          <div class="center">
-            <input class="center col s12 m12" id="filtered" placeholder="filtrar restaurantes" type="text">
-            <label class="col s12 m12 center" >Escribe el tipo de comida y te damos la mejor opción.Ejemplo (Italiana).</label>
-          </div>
-
-          <div class="row">
-            <div class="col m3">
-              <img id="Japonesa" data-index="4" class="modal-trigger" href="#modal1" src="assets/food-1.jpg" alt="restaurant-1">
+          <div class="col s6 m6center">
+            <div class="row center">
+              <input class="col s12 m12 center" id="filtered" placeholder="filtrar restaurantes" type="text">
             </div>
-
-            <div class="col m3">
-              <img id="China" data-index="0" class="modal-trigger" href="#modal1" src="assets/food-2.jpg" alt="restaurant-3">
-            </div>
-
-            <div class="col m3">
-              <img id="Portuguesa" data-index="5" class="modal-trigger" href="#modal1" src="assets/food-3.jpg" alt="restaurant-3">
-            </div>
-
-            <div class="col m3">
-              <img id="Argentina" data-index="2" class="modal-trigger" href="#modal1" src="assets/food-4.jpg" alt="restaurant-4">
+            <div class="row">
+              <label class="col s12 m12 center" >Escribe el tipo de comida y te damos la mejor opción.Ejemplo (Italiana).</label>
             </div>
 
           </div>
 
           <section class="container" id="publish-restaurant">
-<!--            <img class="newImg" src="#" alt="filter-food"> -->
+
           </section>
+
+          <div class="row">
+            <img id="Japonesa" data-index="4" class="modal-trigger" href="#modal1" src="assets/food-1.jpg" alt="restaurant-1">
+            <img id="China" data-index="0" class="modal-trigger" href="#modal1" src="assets/food-2.jpg" alt="restaurant-3">
+            <img id="Portuguesa" data-index="5" class="modal-trigger" href="#modal1" src="assets/food-3.jpg" alt="restaurant-3">
+            <img id="Argentina" data-index="2" class="modal-trigger" href="#modal1" src="assets/food-4.jpg" alt="restaurant-4">
+          </div>
+
 
 
         </section>
@@ -64,13 +59,13 @@
                 <a href="#!" id="close" class="modal-action modal-close waves-effect waves-green btn-flat right">x</a>
               </div>
               <div class="row">
-                <div class="col s12 m12">
+                <div class="col s12 m12 center">
                   <span id="name-restaurant"></span>
                 </div>
                 <div class="col s12 m12 center">
                   <img id="img-restaurant" src="assets/food-5.jpg">
                 </div>
-                <div class="row">
+                <div class="row center">
                   <p id="motto"></p>
                   <a class="btn waves-effect waves-light orange">pedir ahora</a>
                 </div>
@@ -87,28 +82,6 @@
               </div>
           </div>
         </div>
-
-
-
-
-
-
-
-<!--    <div class="container">
-      <div class="row">
-        <div class="col s4">
-          <img id="food-1" src="assets/food-1.jpg" alt="Food-1">
-          <p id="text-1" style="display:none">Este es un platillo</p>
-        </div>
-        <div id="fade" class="col s4">
-          <img  id="food-3" src="assets/food-3.jpg" alt="Food-3">
-          <img id="food-4" style="display:none"  src="assets/food-4.jpg" alt="Food-4">
-          <img id="food-5" style="display:none" src="assets/food-5.jpg" alt="Food-5">
-        </div>
-      </div>
-
-    </div>
--->
 
 
 
